@@ -214,7 +214,13 @@ void handleStatus() {
 };
 
 void handleAlarm() {
-  server.send(200, "text/html", sb);
+  server.send(
+    200,
+    "text/html",
+    sb + 
+    + "\nThe time is: " + (String)timeinfo.tm_hour + ':' + (String)timeinfo.tm_min
+    + "\nAlarm is set for: " + (String)alarmtime.tm_hour + ':' + (String)alarmtime.tm_min
+    );
 
 };
 
