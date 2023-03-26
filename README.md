@@ -5,5 +5,5 @@ https://youtu.be/ydcvAiEqxP4
 
 # To Do's
 
-- [ ]  Add OTA firmware update capability (See [here](https://lastminuteengineers.com/esp32-ota-web-updater-arduino-ide/))
-- [ ]  Add option to lower blinders
+- [x]  Add OTA firmware update capability (See [here](https://lastminuteengineers.com/esp32-ota-web-updater-arduino-ide/))
+- [x]  Add option to lower blinders
