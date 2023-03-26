@@ -221,15 +221,15 @@ void handleAlarm() {
 void raiseBlinders() {
   digitalWrite(relaypin, LOW);  //raiseBlinders();
   Serial.println("Blinders raised");
+  handleAlarm();
   delay(20000);
   digitalWrite(relaypin, HIGH);
-
 };
 
 void lowerBlinders() {
   digitalWrite(lowerpin, LOW);  //lowerBlinders();
   Serial.println("Blinders lowered");
+  handleAlarm();
   delay(20000);
   digitalWrite(lowerpin, HIGH);
-
 };
